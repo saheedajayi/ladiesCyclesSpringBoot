@@ -9,11 +9,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class RegisterLadyResponse {
+public class CreateLadyResponse {
     private Long id;
     private String welcomeMessage;
 
-    public RegisterLadyResponse(Lady lady) {
+    public CreateLadyResponse(Lady lady) {
         this.id = lady.getId();
         this.welcomeMessage = String.format("Welcome %s", lady.getUsername());
     }

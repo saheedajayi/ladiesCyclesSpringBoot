@@ -1,7 +1,11 @@
-package com.paragons.ladiescycles.dtos;
+package com.paragons.ladiescycles.services;
 
-import org.springframework.stereotype.Service;
+import com.paragons.ladiescycles.dtos.requestDto.CreateLadyRequest;
+import com.paragons.ladiescycles.dtos.requestDto.RegisterRequest;
+import com.paragons.ladiescycles.dtos.responseDto.RegisterLadyResponse;
 
-@Service
+
 public interface LadyService {
+    RegisterLadyResponse createLady(CreateLadyRequest ladyRequest);
+    RegisterLadyResponse registerLady(RegisterRequest registerRequest);
 }
